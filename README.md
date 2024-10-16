@@ -6,13 +6,21 @@
 
 * Cambiar la terminal por defecto a zsh(te pide contra y luego ya puedes añadir el directorio del terminal)
 
-  - chsh
+      chsh
+
+    - O usa el siguiente comando para hacerlo en 1 línea:  
+
+          chsh -s $(which zsh)
 
 * Instalar ohmyzsh(vas a la pagina y pillas el curl)
 
   - Esto es un framework de zsh, que te cambia el fichero de configuracion por uno de ellos, que tienen mejorado.
 
 * Ahora vamos a instalar un tema para zsh que va a ser powerlevel10k (https://github.com/romkatv/powerlevel10k):
+
+  - Para ello, vamos a escoger la instalación específica con Oh My Zsh:
+
+        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
   - Hay que cambiar una línea en ./zshrc:
 
@@ -22,7 +30,7 @@
 
 * Si entras en el repo ya te lo pone pero si quieres volver a cambiar la configuracion:
 
-  - p10k configure
+      p10k configure
 
 * Las fuentes que he usado son 4 y es la "MesloLGS NF" y estan en la carpeta fonts.
 
